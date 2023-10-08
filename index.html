@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Checkpoint - Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="containertop container-flextop">
+            <div class="site-title">
+                <h1>GOMYCODE.NG</h1>
+                <p class="subtitle">Learn Coding The Best Way...</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Account</a></li>
+                    <li><a>Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="cart-item">
+            <img src="download.jpeg" alt="Coding" width="200px" height="200px">
+            <span class="quantity-count">Web Development MasterClass</span> <!--This is the first course-->
+            <span class="price">$10</span>
+            <div class="quantity">
+                <button class="decrement">-</button>
+                <span class="count">1</span>
+                <button class="increment">+</button>
+            </div>
+            <button class="remove">Delete</button>
+        </div>
+
+        <div class="cart-item">
+            <img src="ux-monogram-initial-logo-with-geometric-shield-and-star-icon-design-style-vector.jpg" alt="UI/UX" width="200px" height="200px">
+            <span class="quantity-count">UI/UX Design MasterClass</span> <!--This is the second course-->
+            <span class="price">$15</span>
+            <div class="quantity">
+                <button class="decrement">-</button>
+                <span class="count">1</span>
+                <button class="increment">+</button>
+            </div>
+            <button class="remove">Delete</button>
+        </div>
+        <div class="total">
+            <span>Total: $ <span id="total-amount">25</span></span> <!-- This is the total amount on the shopping cart --> 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
